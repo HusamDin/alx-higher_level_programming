@@ -11,7 +11,7 @@ if __name__ == '__main__':
         if len(argv) >= 1:
             if i == 1:
                 if len(argv) == 2:
-                    print("{} argumnent:".format(len(argv) - 1))
+                    print("{} argument:".format(len(argv) - 1))
                 else:
-                    print("{} argumnets:".format(len(argv) - 1))
+                    print("{} arguments:".format(len(argv) - 1))
             print("{}: {}".format(i, argv[i]))
