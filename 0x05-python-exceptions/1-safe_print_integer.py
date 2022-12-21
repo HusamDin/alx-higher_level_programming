@@ -11,7 +11,8 @@ def safe_print_integer(value):
     Otherwise, returns False
     """
     try:
-        print("value = {:d}".format(value))
+
+        print("value = {:d}".format(int(value)))
         return True
     except:
         return False
