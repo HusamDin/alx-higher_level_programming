@@ -10,9 +10,10 @@ def safe_print_integer(value):
     True if value has been correctly printed
     Otherwise, returns False
     """
+    
     try:
-
-        print("value = {:d}".format(int(value)))
+        int(value)
+        print("value = {:d}".format(value))
         return True
     except:
         return False
