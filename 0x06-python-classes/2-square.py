@@ -8,7 +8,7 @@ Instantiation with optional size with conditions if provided.
 class Square:
     """Represents a square with Private instance attribute: size."""
     def __init__(self, size=0):
-        #if type(size) == int:
+        # if type(size) == int:#
         if isinstance(size, int):
             self.__size = size
         else:
