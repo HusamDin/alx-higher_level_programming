@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Defines a square with private instance attribute: size. 
+Defines a square with private instance attribute: size.
 Instantiation with optional size with conditions if provided.
 """
 
@@ -16,4 +16,3 @@ class Square:
 
         if size < 0:
             raise ValueError('size must be >= 0')
-
