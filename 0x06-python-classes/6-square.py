@@ -13,7 +13,7 @@ class Square:
         else:
             self.__size = size
 
-        if ( not isinstance(position, tuple) or
+        if(not isinstance(position, tuple) or
             len(position) != 2 or
             not all(isinstance(num, int) for num in position) or
             not all(num >= 0 for num in position)):
@@ -39,7 +39,7 @@ class Square:
 
     @position.setter
     def position(self, value):
-        if ( not isinstance(value, tuple) or
+        if(not isinstance(value, tuple) or
             len(value) != 2 or
             not all(isinstance(num, int) for num in value) or
             not all(num >= 0 for num in value)):
