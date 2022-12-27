@@ -52,4 +52,4 @@ class Square:
         if self.size == 0:
             print()
         for i in range(self.size):
-            print('_' * self.position[0] + '#' * self.size + '$' * self.position[1])
+            print('_' * self.position[0] + '#' * self.size)
