@@ -55,4 +55,3 @@ class Rectangle:
                 rec += '\n'
 
         return (str(rec))
-
