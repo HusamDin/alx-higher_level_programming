@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Class Rectangle that defines a rectangle by: (based on 5-rectangle.py"""
 
+
 class Rectangle:
     """Class Rectangle that defines a rectangle by: (based on 5-rectangle.py"""
     number_of_instances = 0
@@ -9,7 +10,7 @@ class Rectangle:
         self.width = width
         self.height = height
         type(self).number_of_instances += 1
-        
+
     @property
     def width(self):
         return self.__width
@@ -22,7 +23,7 @@ class Rectangle:
             self.__width = width
         else:
             raise TypeError('width must be an integer')
-    
+
     @property
     def height(self):
         return self.__height
@@ -65,4 +66,3 @@ class Rectangle:
     def __del__(self):
         print("Bye rectangle...");
         type(self).number_of_instances -= 1
-
