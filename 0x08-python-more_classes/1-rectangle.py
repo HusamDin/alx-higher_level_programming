@@ -7,7 +7,7 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
-        
+
     @property
     def width(self):
         return self.__width
@@ -20,7 +20,7 @@ class Rectangle:
             self.__width = width
         else:
             raise TypeError('width must be an integer')
-    
+
     @property
     def height(self):
         return self.__height
