@@ -1,12 +1,13 @@
 #!/usr/bin/python377;30502;0c
 """Class Rectangle that defines a rectangle by: (based on 4-rectangle.py"""
 
+
 class Rectangle:
     """Class Rectangle that defines a rectangle by: (based on 4-rectangle.py"""
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
-        
+
     @property
     def width(self):
         return self.__width
@@ -19,7 +20,7 @@ class Rectangle:
             self.__width = width
         else:
             raise TypeError('width must be an integer')
-    
+
     @property
     def height(self):
         return self.__height
