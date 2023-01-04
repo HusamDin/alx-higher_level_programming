@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""Class Rectangle that defines a rectangle by: (based on 6-rectangle.py"""
+"""Class Rectangle that defines a rectangle by: (based on 7-rectangle.py"""
 
 class Rectangle:
-    """Class Rectangle that defines a rectangle by: (based on 6-rectangle.py"""
+    """Class Rectangle that defines a rectangle by: (based on 7-rectangle.py"""
     number_of_instances = 0
     print_symbol = '#'
 
@@ -10,7 +10,7 @@ class Rectangle:
         self.width = width
         self.height = height
         type(self).number_of_instances += 1
-        
+
     @property
     def width(self):
         return self.__width
