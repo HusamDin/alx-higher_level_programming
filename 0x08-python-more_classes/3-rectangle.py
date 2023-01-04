@@ -43,7 +43,7 @@ class Rectangle:
 
     def __str__(self):
         if not self.width or not self.height:
-            return (0)
+            return ""
 
         rec = ''
 
