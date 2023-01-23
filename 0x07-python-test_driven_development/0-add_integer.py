@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-""" 
+"""
 
-    This module has one function to add up two integers 
+    This module has one function to add up two integers
 
 """
+
 
 def add_integer(a, b=98):
     """Return the sum of two integers or floats as integers
@@ -25,3 +26,4 @@ def add_integer(a, b=98):
             raise TypeError('b must be an integer')
     else:
         raise TypeError('a must be an integer')
+
