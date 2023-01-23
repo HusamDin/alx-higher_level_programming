@@ -38,4 +38,12 @@ Now use it:
     TypeError: b must be an integer
     
     >>> add_integer(float('inf'), 5)
-    cannot convert float infinity to integer
+    Traceback (most recent call last):
+      ...
+    OverflowError: cannot convert float infinity to integer
+
+    >>> add_integer(float('NaN'))
+    Traceback (most recent call last):
+      ...
+    ValueError: cannot convent float NaN to integer
+    
