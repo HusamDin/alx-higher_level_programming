@@ -36,7 +36,7 @@ Now use it:
     Traceback (most recent call last):
       ...
     TypeError: b must be an integer
-    
+
     >>> add_integer(float('inf'), 5)
     Traceback (most recent call last):
       ...
@@ -45,5 +45,4 @@ Now use it:
     >>> add_integer(float('NaN'))
     Traceback (most recent call last):
       ...
-    ValueError: cannot convent float NaN to integer
-    
+    ValueError: cannot convert float NaN to integer
