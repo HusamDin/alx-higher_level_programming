@@ -1,0 +1,38 @@
+77;30502;0cThe ``3-say_my_name`` module
+============================
+
+Function ``say_my_name`` prints My name is <first name> <last name>
+----------------------------------------------------------
+
+Importing the function
+	  >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Usage
+=====
+
+Trying the default behavior of the function
+       >>> say_my_name("Husam", "Nasser")
+       My name is Husam Nasser
+
+
+Trying to pass only the positional argument (last name)
+       >>> say_my_name("Husam")
+       My name is Husam 
+
+
+Exception Cases
+
+
+Trying to pass a non string to the first name
+       >>> say_my_name((1, 2), "Nasser")
+       Traceback (most recent call last):
+         ...
+       TypeError: first_name must be a string
+
+Trying to pass a non string to the last name
+       >>> say_my_name("Husam", [1])
+       Traceback (most recent call last):
+         ...
+       TypeError: last_name must be a string
+
+
