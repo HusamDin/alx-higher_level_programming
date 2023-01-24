@@ -35,7 +35,7 @@ must have the same size")
         mat_div.append([])
         for j in range(len(matrix[i])):
             if (not isinstance(matrix[i][j], int) and
-                  not isinstance(matrix[i][j], float)):
+                    not isinstance(matrix[i][j], float)):
                 raise TypeError("matrix must be a matrix \
 (list of lists) of integers/floats")
             mat_div[i].append(float("{0:.2f}".format(matrix[i][j] / div)))
