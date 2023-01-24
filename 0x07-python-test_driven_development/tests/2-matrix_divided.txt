@@ -16,11 +16,11 @@ Dividing each element of the matrix by 3 and check decimal places
 
 Dividing each element of the matrix by a negative number
 	 >>> matrix_divided(mat, -3)
-	 [[-0.33, -0.67, -1.0], [-1.33, -1.67, -1.17], [-0.0, -2.67, -3.0]]
+	 [[-0.33, -0.67, -1.0], [-1.33, -1.67, -2.0]]
 
 Dividing each element of the matrix by a floating number and check decimal places
 	 >>> matrix_divided(mat, 3.5)
-	 [[0.29, 0.57, 0.86], [1.14, 1.43, 1.0], [0.0, 2.29, 2.57]]
+	 [[0.29, 0.57, 0.86], [1.14, 1.43, 1.71]]
 
 Dividing each floating element of the matrix by 3
 	 >>> flt_mat = [[1.2, 2.5, 3.6], [4.3, 5.6, 6.8]]
@@ -46,57 +46,83 @@ Exception Cases
 
 Dividing each element of the matrix by 0
 	 >>> matrix_divided(mat, 0)
+	 Traceback (most recent call last):
+	   ...
 	 ZeroDivisionError: division by zero
 
 Dividing each floating element of the matrix by 0
 	 >>> matrix_divided(flt_mat, 0)
-	 ZeroDivisionError: division by zero
+         Traceback (most recent call last):
+           ...
+         ZeroDivisionError: division by zero
 
 Dividing each negative element of the matrix by 0
 	 >>> matrix_divided(neg_mat, 0)
-	 ZeroDivisionError: division by zero
+         Traceback (most recent call last):
+           ...
+         ZeroDivisionError: division by zero
 
 Dividing each element of the matrix by a non int and float number
 	 >>> matrix_divided(mat, '3')
+         Traceback (most recent call last):
+           ...
 	 TypeError: div must be a number
 
 Dividing each floating element of the matrix by a non int and float number
 	 >>> matrix_divided(flt_mat, '5')
+         Traceback (most recent call last):
+           ...
 	 TypeError: div must be a number
 
 Dividing each negative element of the matrix by a non int and float number
 	 >>> matrix_divided(neg_mat, '2')
+         Traceback (most recent call last):
+           ...
 	 TypeError: div must be a number
 
 Dividng each element of unequal rows of the matrix by 3
 	>>> unequal_mat = [[1, 2, 3], [4, 5, 6, 7]]
 	>>> matrix_divided(unequal_mat, 3)
+        Traceback (most recent call last):
+          ...
  	TypeError: Each row of the matrix must have the same size
 
 Dividng each element of unequal rows of the matrix by a negative number
 	>>> matrix_divided(unequal_mat, -3)
+        Traceback (most recent call last):
+          ...
 	TypeError: Each row of the matrix must have the same size
 
 Dividng each element of unequal rows of the matrix by 0
 	>>> matrix_divided(unequal_mat, 0)
-	TypeError: division by zero
+        Traceback (most recent call last):
+          ...
+	ZeroDivisionError: division by zero
 
 Dividing each element of a non int and float matrix by 3
-	 >>> hyb_mat = [[1, '2', 3], [(4, 5), 6, 7]]
-	 >>> matrix_divided(hyb_mat, 3)
-	 TypeError: matrix must be a matrix (list of lists) of integers/floats
+	>>> hyb_mat = [[1, '2', 3], [(4, 5), 6, 7]]
+	>>> matrix_divided(hyb_mat, 3)
+        Traceback (most recent call last):
+          ...
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 Dividing each element of a non int and float matrix by a negative number
 	 >>> matrix_divided(hyb_mat, -3)
+         Traceback (most recent call last):
+           ...
 	 TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 Dividing each element of a non int and float matrix by 0
 	 >>> matrix_divided(hyb_mat, 0)
+         Traceback (most recent call last):
+           ...
 	 ZeroDivisionError: division by zero
 
 Dividing each element of a non int and float unequal matrix by 3
 	 >>> hyb_unequal_mat = [[1, (2, 3), 4], [5, 6, 7, 8]]
-	 >>> matrix_divided(hyb_unequal_mat)
+	 >>> matrix_divided(hyb_unequal_mat, 3)
+         Traceback (most recent call last):
+           ...
 	 TypeError: Each row of the matrix must have the same size
 	 
 	 
