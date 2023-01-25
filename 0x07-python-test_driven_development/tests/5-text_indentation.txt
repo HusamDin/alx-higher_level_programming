@@ -1,0 +1,82 @@
+The ``5-text_indentation`` Module
+=================================
+
+This module has one function ``text_indentation``
+--------------------------------------------------
+
+This function takes one string arg and prints two new 
+lines after each period(.), question mark(?) and colon(:)
+
+Importing the function
+	      >>> txt_ind = __import__('5-text_indentation').text_indentation
+
+Usage
+=====
+
+Trying to print a text without specified characters (.) (?) (:)
+       >>> txt_ind("This world is cruel")
+       This world is cruel
+
+Trying to print a text with .
+       >>> txt_ind("This world is cruel.")
+       This world is cruel.
+       <BLANKLINE>
+
+Trying to print a text with ?
+       >>> txt_ind("Is this world cruel?")
+       Is this world cruel?
+       <BLANKLINE>
+
+Trying to print a text with :
+       >>> txt_ind("I said: this world is cruel")
+       I said:
+       <BLANKLINE>
+       this world is cruel
+
+Trying to print a text with . and ?
+       >>> txt_ind("Is this world cruel? Definitely.")
+       Is this world cruel?
+       <BLANKLINE>
+       Definitely.
+       <BLANKLINE>
+
+Trying to print a text with . and :
+       >>> txt_ind("I said: This world is cruel.")
+       I said:
+       <BLANKLINE>
+       This world is cruel.
+       <BLANKLINE>
+
+Trying to print a text with ? and :
+       >>> txt_ind("I asked: Is this world cruel?")
+       I asked:
+       <BLANKLINE>
+       Is this world cruel?
+       <BLANKLINE>
+
+Trying to print a text with . and ? and :
+       >>> txt_ind("I asked: Is this world cruel? I answered: Definitely.")
+       I asked:
+       <BLANKLINE>
+       Is this world cruel?
+       <BLANKLINE>
+       I answered:
+       <BLANKLINE>
+       Definitely.
+       <BLANKLINE>
+
+
+EXCEPTIONS:
+
+
+Trying to print a non string
+       >>> txt_ind(1)
+       Traceback (most recent call last):
+         ...
+       TypeError: text must be a string
+
+Trying to print a non string
+       >>> txt_ind([1, 2, 3])
+       Traceback (most recent call last):
+         ...
+       TypeError: text must be a string
