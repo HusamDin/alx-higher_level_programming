@@ -20,6 +20,9 @@ def text_indentation(text):
         TypeError: If a non string object is passed
 
     """
+    if not text:
+        raise (0)
+
     if not isinstance(text, str):
         raise TypeError('text must be a string')
 
