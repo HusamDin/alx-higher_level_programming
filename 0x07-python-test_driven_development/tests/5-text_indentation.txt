@@ -85,4 +85,4 @@ Trying to pass nothing to the function
        >>> txt_ind(None)
        Traceback (most recent call last):
          ...
-       TypeError: text must be a string
+       TypeError: exceptions must derive from BaseException
