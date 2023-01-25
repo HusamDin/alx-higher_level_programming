@@ -80,3 +80,7 @@ Trying to print a non string
        Traceback (most recent call last):
          ...
        TypeError: text must be a string
+
+Trying to pass nothing to the function
+       >>> txt_ind()
+       TypeError: txt_ind() missing 1 required positional argument: 'text'
