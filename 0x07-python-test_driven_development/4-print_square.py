@@ -13,7 +13,7 @@ def print_square(size):
 
     Args:
         size: an int
-    
+
     Raises:
         TypeError: if size is not an int
         ValueError: if size is less than 0
@@ -25,4 +25,3 @@ def print_square(size):
         raise ValueError('size must be >= 0')
     for i in range(size):
         print('#' * size)
-    
