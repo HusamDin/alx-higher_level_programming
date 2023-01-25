@@ -36,7 +36,7 @@ def text_indentation(text):
             print(':\n\n', end='')
             no_space = True
         else:
-            if no_space:
+            if no_space and letter == ' ':
                 no_space = False
             else:
                 print(letter, end='')
