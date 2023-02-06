@@ -23,4 +23,3 @@ def square_matrix_simple(matrix=[]):
         for j in range(len(matrix[i])):
             mat[i].append(matrix[i][j] ** 2)
     return (mat)
-
