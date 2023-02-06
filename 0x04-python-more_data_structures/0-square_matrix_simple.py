@@ -5,6 +5,7 @@ This module has one function to compute the square value of a matrix values
 
 """
 
+
 def square_matrix_simple(matrix=[]):
     """
     This function computes the square value of a matrix values
@@ -22,5 +23,4 @@ def square_matrix_simple(matrix=[]):
         for j in range(len(matrix[i])):
             mat[i].append(matrix[i][j] ** 2)
     return (mat)
-
 
