@@ -12,7 +12,7 @@ def best_score(a_dictionary):
 
     Args:
         a_dictionary: Our target dic
-    
+
     Return: 
         best_key: The biggest key's value
     """
@@ -32,4 +32,3 @@ def best_score(a_dictionary):
         return (None)
 
     return (best_key)
-            
