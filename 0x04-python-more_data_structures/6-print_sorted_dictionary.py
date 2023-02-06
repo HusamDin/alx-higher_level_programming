@@ -12,7 +12,7 @@ def print_sorted_dictionary(a_dictionary):
 
     Args:
         a_dictionary: A dic to print its items by ordered keys
-    
+
     Return:
         void
     """
