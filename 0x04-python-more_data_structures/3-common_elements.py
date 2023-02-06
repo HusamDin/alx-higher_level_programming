@@ -5,6 +5,7 @@ This module has one function to return a set of common elements
 
 """
 
+
 def common_elements(set_1, set_2):
     """
     This functions returns a set of common elements in two sets
