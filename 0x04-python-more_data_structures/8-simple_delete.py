@@ -9,7 +9,7 @@ This module has one function to deletea key in a dic
 def simple_delete(a_dictionary, key=""):
     """
     Deletes a key in a dictionary
-    
+
     Args:
         a_dictionary: A dictionary
         key: The key to be deleted
