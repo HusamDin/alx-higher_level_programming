@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 """
 This module has one function to replace all occurences of an element by another 
 
