@@ -7,10 +7,10 @@ This module has one function return a new dictionary with all values multiplied 
 def multiply_by_2(a_dictionary):
     """
     Return a new dictionary with all values multiplied by 2
-    
+
     Args:
         a_dictionary: Our target dic
-    
+
     Return: new_dic
     """
     new_dic = a_dictionary.copy()
