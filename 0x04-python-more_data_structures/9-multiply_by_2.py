@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 """
 
-This module has one function return a new dictionary with all values multiplied by 2
+This module has a function returns a new dic with all values multiplied by 2
 
 """
+
+
 def multiply_by_2(a_dictionary):
     """
     Return a new dictionary with all values multiplied by 2
