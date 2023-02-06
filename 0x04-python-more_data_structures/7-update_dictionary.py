@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 
-This module has one function replaces or adds key/value in a dictionary. 
+This module has one function replaces or adds key/value in a dictionary.
 
 """
 
