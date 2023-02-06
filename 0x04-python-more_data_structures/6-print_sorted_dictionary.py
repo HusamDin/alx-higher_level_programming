@@ -17,5 +17,5 @@ def print_sorted_dictionary(a_dictionary):
         void
     """
     for key in sorted(a_dictionary):
-        print(key+':', end =' ')
+        print(key + ':', end=' ')
         print(a_dictionary[key])
