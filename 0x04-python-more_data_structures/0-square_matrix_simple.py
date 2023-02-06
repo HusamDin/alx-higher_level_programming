@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-""" 
+"""
 
-This module has one function to compute the square value of a matrix values 
+This module has one function to compute the square value of a matrix values
 
 """
 
 def square_matrix_simple(matrix=[]):
-    """ 
-    This function computes the square value of a matrix values 
-    
+    """
+    This function computes the square value of a matrix values
+
     Args: matrix - a 2D matrix
 
     Returns: A new 2D square matrix bassed off matrix elements
