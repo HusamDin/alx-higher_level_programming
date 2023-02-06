@@ -4,9 +4,10 @@ This module has one function to replace all occurences of an element by another
 
 """
 
+
 def search_replace(my_list, search, replace):
     """
-    This function replaces all occurences of an element by another in a new list
+    This function replaces all occurences of an element by another
 
     Args:
         my_list: the initial list
@@ -21,4 +22,3 @@ def search_replace(my_list, search, replace):
             new_list[i] = replace
 
     return (new_list)
-
