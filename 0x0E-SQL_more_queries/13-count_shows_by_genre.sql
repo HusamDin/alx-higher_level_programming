@@ -1,7 +1,7 @@
 -- This script lists all genres from hbtn_0d_tvshows
 -- and displays the number of shows linked to each
 SELECT
-        `name`,
+        `name` AS `genre`,
         COUNT(`genre_id`) AS `number_of_shows`
 FROM
 	`tv_genres`
