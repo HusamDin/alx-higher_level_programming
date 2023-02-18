@@ -6,4 +6,5 @@ JOIN `tv_show_genres`
 ON `id` = `genre_id`
 JOIN `tv_shows`
 ON `tv_shows`.`id` = `show_id`
-WHERE `title` = "Dexter";
+WHERE `title` = "Dexter"
+ORDER BY `name`;
