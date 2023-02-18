@@ -4,4 +4,6 @@ SELECT `name`
 FROM `tv_genres`
 JOIN `tv_show_genres`
 ON `id` = `genre_id`
-WHERE `show_id` = 8;
+JOIN `tv_shows`
+ON `tv_shows`.`id` = `show_id`
+WHERE `title` = "Dexter";
